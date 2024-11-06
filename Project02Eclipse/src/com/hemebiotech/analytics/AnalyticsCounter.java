@@ -40,14 +40,3 @@ public class AnalyticsCounter {
     }
   }
 }
-// Lire les données provenant d'un fichier
-// @param => file
-//@result => list of symptom
-
-// analyser les données faire une liste des symptomes avec leur nombre associé
-// @param => list of symptom
-//@result => 
-
-// Trier les données et les écrire dans un fichier result.out
-// @param =>
-//@result =>

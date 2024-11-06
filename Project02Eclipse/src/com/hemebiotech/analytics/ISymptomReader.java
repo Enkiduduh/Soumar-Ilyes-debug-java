@@ -22,7 +22,7 @@ public interface ISymptomReader {
    * @return a raw listing of all Symptoms obtained from a data source, duplicates
    *         are possible/probable
    */
-  List<String> GetSymptoms(String filename);
+  List<String> getSymptoms(String filename);
 
   /**
    * get symptoms with associated number of times from a list of symptoms
@@ -31,7 +31,7 @@ public interface ISymptomReader {
    *
    * @return a collection of symptoms with their associated number of times
    */
-  public Map<String, Integer> GetSymptomsWithAssociatedNumbers(List<String> symptoms);
+  public Map<String, Integer> getSymptomsWithAssociatedNumbers(List<String> symptoms);
 
   /**
    * write a file from map list of symptoms with associated number of times
@@ -50,8 +50,8 @@ public interface ISymptomReader {
 
 // analyser les données faire une liste des symptomes avec leur nombre associé
 // @param => list of symptom
-// @result =>
+// @result => pair clé-valeur trié (symptome / nb de fois)
 
 // Trier les données et les écrire dans un fichier result.out
-// @param =>
-// @result =>
+// @param => pair clé-valeur trié (symptome / nb de fois)
+// @result => file
