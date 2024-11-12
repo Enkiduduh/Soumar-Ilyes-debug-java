@@ -5,11 +5,13 @@ import java.util.List;
 import java.util.Map;
 
 public class AnalyticsCounter {
-
-  ReadSymptomDataFromFile readSymptomDataFromFile = new ReadSymptomDataFromFile();
-
-  public List<String> reading(String file) {
-    return readSymptomDataFromFile.getSymptoms(file);
+  private final ReadSymptomDataFromFile readSymptomDataFromFile;
+  
+  public AnalyticsCounter(String filepath) {
+    this.readSymptomDataFromFile = new ReadSymptomDataFromFile(filepath);
+  }
+  public List<String> reading(String filepath) {
+    return readSymptomDataFromFile.getSymptoms(filepath);
   }
 
   public Map<String, Integer> analysing(List<String> symptoms) {
