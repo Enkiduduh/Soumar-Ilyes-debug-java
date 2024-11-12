@@ -44,14 +44,3 @@ public interface ISymptomReader {
   void writeSymptomsWithAssociatedNumbers(Map<String, Integer> mapSymptomsWithAssociatedNumbers) throws IOException;
 }
 
-// Lire les données provenant d'un fichier
-// @param => file
-// @result => list of symptom
-
-// analyser les données faire une liste des symptomes avec leur nombre associé
-// @param => list of symptom
-// @result => pair clé-valeur trié (symptome / nb de fois)
-
-// Trier les données et les écrire dans un fichier result.out
-// @param => pair clé-valeur trié (symptome / nb de fois)
-// @result => file

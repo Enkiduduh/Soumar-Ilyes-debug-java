@@ -64,10 +64,16 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
   }
 
   @Override
-  public void writeSymptomsWithAssociatedNumbers(Map<String, Integer> mapSymptomsWithAssociatedNumbers) throws IOException {
-
-    String currentUsersHomeDir = System.getProperty("user.home");
-    String path = currentUsersHomeDir + System.getProperty("file.separator") + "result.out";
+  public void writeSymptomsWithAssociatedNumbers(Map<String, Integer> mapSymptomsWithAssociatedNumbers)
+      throws IOException {
+    /**
+     * This code permits to recover "result.out" in your home directory.
+     * But for the exercice, it won't be necessary.
+     *
+     * String currentUsersHomeDir = System.getProperty("user.home");
+     * String path = currentUsersHomeDir + System.getProperty("file.separator") + "result.out";
+     */
+    String path = "result.out";
     FileWriter writer = new FileWriter(path);
     if (mapSymptomsWithAssociatedNumbers != null && !mapSymptomsWithAssociatedNumbers.isEmpty()) {
       mapSymptomsWithAssociatedNumbers.forEach((symptom, key) -> {
