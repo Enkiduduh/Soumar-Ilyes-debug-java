@@ -7,6 +7,12 @@ import java.util.Map;
 public class AnalyticsCounter {
   private final ReadSymptomDataFromFile readSymptomDataFromFile;
 
+  /**
+   * Initialization of AnalyticsCounter
+   *
+   * 
+   */
+
   public AnalyticsCounter(String filepath) {
     this.readSymptomDataFromFile = new ReadSymptomDataFromFile(filepath);
   }
